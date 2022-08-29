@@ -1,7 +1,7 @@
 $bg: rgb(16, 16, 16);
 
 .banner {
-  height: 600px;
+  height:100vh ;
   background-color: $bg;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,6 +75,7 @@ $bg: rgb(16, 16, 16);
 }
 
 .row {
+  z-index: 0;
   background-color: $bg;
   padding: 1rem;
 
@@ -90,12 +91,14 @@ $bg: rgb(16, 16, 16);
 }
 
 .card {
-  width: 200px;
-  margin: 0.3rem;
+  border-radius: 5%;
+  width: 10vw;
+  margin: 0.5vw;
   cursor: pointer;
   transition: transform 0.5s;
   &:hover {
-    transform: translateY(-10px);
+    transform: translatey(-10px);
+    z-index: 10000;
   }
 }
 
