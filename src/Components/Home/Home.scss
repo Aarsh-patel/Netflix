@@ -26,14 +26,14 @@ $bg: rgb(16, 16, 16);
   h1,
   p {
     color: white;
-    font-size: 3rem;
+    font-size: min(1vw,1px);
     width: 40%;
     z-index: 10;
   }
   p {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    word-spacing: 3px;
+    font-size: max(1.5vw,15px);
+    letter-spacing: 0.5vw;
+    word-spacing: 0.7vw;
     font-weight: 100;
   }
 
@@ -42,7 +42,8 @@ $bg: rgb(16, 16, 16);
 
     button {
       padding: 1rem;
-      width: 150px;
+      width: 9vw;
+      min-width: 100px;
       outline: none;
       border: none;
       z-index: 10;
@@ -93,6 +94,7 @@ $bg: rgb(16, 16, 16);
 .card {
   border-radius: 5%;
   width: 10vw;
+  min-width: 100px;
   margin: 0.5vw;
   cursor: pointer;
   transition: transform 0.5s;

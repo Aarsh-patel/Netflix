@@ -8,7 +8,7 @@ import { AiOutlinePlus } from "react-icons/ai"
 const apiKey = "243200758fbe4f4b587728e8a4aa4cdf";
 const url = "https://api.themoviedb.org/3";
 const imgUrl = "https://image.tmdb.org/t/p/original";
-const upcoming = "upcoming";
+// const upcoming = "upcoming";
 const nowPlaying = "now_playing";
 const popular = "popular";
 const topRated = "top_rated";
@@ -28,19 +28,19 @@ const Row = ({ title, arr = [] }) => (
 );
 
 const Home = () => {
-    const [upcomingMovies, setUpcomingMovies] = useState([]);
+    // const [upcomingMovies, setUpcomingMovies] = useState([]);
     const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
     const [popularMovies, setPopularMovies] = useState([]);
     const [topRatedMovies, setTopRatedMovies] = useState([]);
     const [genre, setGenre] = useState([]);
 
     useEffect(() => {
-        const fetchUpcoming = async () => {
-            const {
-                data: { results },
-            } = await axios.get(`${url}/movie/${upcoming}?api_key=${apiKey}`);
-            setUpcomingMovies(results);
-        };
+        // const fetchUpcoming = async () => {
+        //     const {
+        //         data: { results },
+        //     } = await axios.get(`${url}/movie/${upcoming}?api_key=${apiKey}`);
+        //     setUpcomingMovies(results);
+        // };
         const fetchNowPlaying = async () => {
             const {
                 data: { results },
@@ -69,7 +69,7 @@ const Home = () => {
 
         getAllGenre();
 
-        fetchUpcoming();
+        // fetchUpcoming();
         fetchNowPlaying();
         fetchPopular();
         fetchTopRated();
@@ -94,7 +94,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <Row title={"Upcoming"} arr={upcomingMovies} />
+            {/* <Row title={"Upcoming"} arr={upcomingMovies} /> */}
             <Row title={"Now Playing"} arr={nowPlayingMovies} />
             <Row title={"Popular"} arr={popularMovies} />
             <Row title={"Top Rated"} arr={topRatedMovies} />
