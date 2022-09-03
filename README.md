@@ -3,11 +3,11 @@ Nextflix clone using themoviedb API.
 &nbsp;
 Frontend is developed using React and backend data is provided by Themoviedb.
 &nbsp;
-[img](./images/img_1.png)
+![img](./images/img_1.png)
 &nbsp;
-[img](./images/img_2.png)
+![img](./images/img_2.png)
 &nbsp;
-[img](./images/img_3.png)
+![img](./images/img_3.png)
 &nbsp;
 
 # Features to Add
